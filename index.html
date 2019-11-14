@@ -1,645 +1,548 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
-
-
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="/img/avatar.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="author" content="Himitsu98">
-  <meta name="keywords" content="">
-  <title>Himitsu98</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="No one's sky" type="application/atom+xml">
 
-  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css"  >
-<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"  >
-<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css"  >
-<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css"  >
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
-  <link rel="stylesheet" href="/lib/prettify/tranquil-heart.min.css"  >
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
 
-<link rel="stylesheet" href="/css/main.css"  >
+  <meta property="og:type" content="website">
+<meta property="og:title" content="No one&#39;s sky">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta property="og:site_name" content="No one&#39;s sky">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/">
 
 
-  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css"  >
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
 
+  <title>No one's sky</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
 
-<body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand"
-       href="/">&nbsp;<strong>Himitsu98</strong>&nbsp;</a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-        
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/archives/">Archives</a>
-          </li>
-        
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/categories/">Categories</a>
-          </li>
-        
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/tags/">Tags</a>
-          </li>
-        
-          
-          
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">About</a>
-          </li>
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
-          </li>
-        
-      </ul>
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">No one's sky</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
+        <p class="site-subtitle">To find your fire keeper</p>
   </div>
 
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
 
 </nav>
+</div>
+    </header>
 
-    <div class="view intro-2" id="background"
-         style="background: url('/img/cover.png')no-repeat center center;
-           background-size: cover;
-           background-attachment: scroll;">
-      <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
-          <div class="container text-center white-text fadeInUp">
-            <span class="h2" id="subtitle">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/1001%20%E3%80%9C%201015/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Himitsu98">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="No one's sky">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/1001%20%E3%80%9C%201015/" class="post-title-link" itemprop="url">1001 ~ 1015</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
               
+
+              <time title="Created: 2019-11-12 10:00:00 / Modified: 23:25:59" itemprop="dateCreated datePublished" datetime="2019-11-12T10:00:00+08:00">2019-11-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PAT-%E7%94%B2%E7%BA%A7/" itemprop="url" rel="index">
+                    <span itemprop="name">PAT 甲级</span>
+                  </a>
+                </span>
             </span>
 
-            
-          </div>
+          
 
-          
-            <div class="scroll-down-bar">
-              <i class="fas fa-angle-down scroll-down-arrow"></i>
-            </div>
-          
         </div>
-      </div>
-    </div>
-  </header>
+      </header>
 
-  <main>
-    
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mb-4 mx-auto">
     
     
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/11/12/1001%20%E3%80%9C%201015/">
-        <p class="h4 index-header">1001 ~ 1015</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">
-1001 A+B FormatCalculate a+b and output the sum in standard format – that is, the digits must be separated into groups of three by commas (unless there are less than four digits).
-输入格式：
-Each input file contains one test case. Each case contains a pair of integers a and b where −10^6^≤a,b≤10^6^. 
-The numbers are separated by a space.
-输出格式：
-For each test case, you should output the sum of a and b in one line. The sum must be written in the standard format.
-输入样例：
--1000000 9
-
-输出样例：
--999,991
-
-答案：
-#include &lt;iostream&gt;#include &lt;string&gt;using namespace std;int main() &#123;    int a, b;    scanf("%d %d", &amp;a, &amp;b);	//10的6次方，小于10的9次方，用int型    string str = to_string(a + b);    int length = str.size();    int n = 1;    while ((str[0] == '-' &amp;&amp; length - 1 &gt; 3) || (str[0] != '-' &amp;&amp; length &gt; 3)) &#123;        str.insert(str.size() - n * 3 - n + 1, ",");        length -= 3;        n++;    &#125;    cout &lt;&lt; str;&#125;
-
-
-1002 A+B for Polynomials重点：hash思想
-This time, you are supposed to find A+B where A and B are two polynomials.
-输入格式：
-Each input file contains one test case. Each case occupies 2 lines, and each line contains the information of a polynomial:
-K N1 aN1 N2 aN2 … NK aNK
-where K is the number of nonzero terms in the polynomial, Ni and aNi (i=1,2,⋯,K) are the exponents（指数） and coefficients（系数）, respectively（各自）. It is given that 1 ≤ K ≤ 10, 0 ≤ NK &lt; ⋯ &lt; N2&lt; N1 ≤ 1000.
-输出格式：
-For each test case you should output the sum of A and B in one line, with the same format as the input. Notice that there must be NO extra space at the end of each line. Please be accurate to 1 decimal place.    
-输入样例：
-2 1 2.4 0 3.22 2 1.5 1 0.5
-
-输出样例：
-3 2 1.5 1 2.9 0 3.2
-
-答案：
-/* * 计算多项式的和，输入两行，每行第一个给出非零项个数，随后的每两个数分别为指数和系数， 要求输出格式也同上； * 指数小于等于1000。 * 这题与底数无关，将指数相同的项系数相加即可。 * 1. 读入第一个输入，用一个数组，散列地存入所有项， * 2. 从第二个输入起，遇到相同的指数，即将系数相加, arr[n] = m 即为 指数为n的项的系数为m * 3. 由于最中需要输出一个总数量K，便利找不为0.0的 * 4. 注意相加和为0的项 */#include &lt;iostream&gt;using namespace std;int main() &#123;    double arr[1010] = &#123;0.0&#125;;    int k1, k2, n;    double num;    scanf("%d", &amp;k1);    for (int i = 0; i &lt; k1; ++i) &#123;        scanf("%d%lf", &amp;n, &amp;num);        arr[n] += num;    &#125;    scanf("%d", &amp;k2);    for (int j = 0; j &lt; k2; ++j) &#123;        scanf("%d%lf", &amp;n,&amp;num);        arr[n] += num;    &#125;    int count = 0;    for (int l = 0; l &lt; 1010; ++l) &#123;        if (arr[l] != 0.0)            count++;    &#125;    printf("%d", count);    for (int k = 1000; k &gt;= 0; k--) &#123;        if (arr[k] != 0.0) &#123;            printf(" %d %.1f", k, arr[k]);        &#125;    &#125;&#125;
-
-
-1004 Counting Leaves重点：静态树，递归 
-A family hierarchy（集团） is usually presented by a pedigree tree. Your job is to count those family members who have no child.
-输入格式：
-Each input file contains one test case. Each case starts with a line containing 0 &lt; N &lt; 100, the number of nodes in a tree, and M (&lt;N), the number of non-leaf nodes. Then M lines follow, each in the format:
-ID K ID[1] ID[2] ... ID[K]
-where ID is a two-digit number representing a given non-leaf node, K is the number of its children, followed by a sequence of two-digit ID‘s of its children. For the sake（目的） of simplicity, let us fix the root ID to be 01.
-The input ends with N being 0. That case must NOT be processed.
-输出格式：
-For each test case, you are supposed to count those family members who have no child for every seniority level starting from the root. The numbers must be printed in a line, separated by a space, and there must be no extra space at the end of each line.d
-The sample case represents a tree with only 2 nodes, where 01 is the root and 02 is its only child. Hence on the root 01 level, there is 0 leaf node; and on the next level, there is 1 leaf node. Then we should output 0 1 in a line.
-输入样例：
-2 101 1 02
-
-输出样例：
-0 1
-
-答案：
-/* * 每个实例给出一个0&lt;N&lt;100，表示树的结点个数，再给出一个M(&lt;N)，作为非叶结点的个数 * 随后列出所有的M个非叶结点，格式为：ID K ID[1] ID[2] ... ID[K] * ID为给定的非叶结点，K是他的孩子数，其后的两位数为孩子结点的ID，根结点的ID恒为01 * 层序遍历每一层，输出所有叶子结点 * 1. 使用一个vector数组tree存储每一个结点的孩子信息，vector[i].size() = 0 时，为叶结点 * 2. 遍历tree，每找到一个叶子结点，该层的book[deptp]就加1 * 3. 输出 * * 输入： * 2 1 * 01 1 02 * 输出： * 0 1 */#include &lt;vector&gt;#include &lt;algorithm&gt;#include &lt;iostream&gt;using namespace std;const int N = 101;  //结点数vector&lt;int&gt; tree[N];int book[100];int maxDepth = -1;//用递归从根节点遍历void DFS(int index, int depth) &#123;    //递归边界    if (tree[index].size() == 0) &#123;        book[depth]++;        maxDepth = max(maxDepth, depth);        return;    &#125;    //递归式    for (int i = 0; i &lt; tree[index].size(); ++i) &#123;        DFS(tree[index][i], depth + 1);    &#125;&#125;int main() &#123;    int n, m, nodeName, num, temp;    scanf("%d %d", &amp;n, &amp;m);    //vector&lt;int&gt;数组tree存储所有的结点信息    for (int i = 0; i &lt; m; ++i) &#123;        scanf("%d %d", &amp;nodeName, &amp;num);        for (int j = 0; j &lt; num; ++j) &#123;            scanf("%d", &amp;temp);            tree[nodeName].push_back(temp);        &#125;    &#125;    //开始递归    DFS(01, 0);    printf("%d", book[0]); //如果depth为0，则只输出0    for (int k = 1; k &lt;= maxDepth; ++k) &#123;        printf(" %d", book[k]);    &#125;&#125;
-
-
-1005 Spell It Right重点：string 与 int 的转换
-Given a non-negative integer N, your task is to compute the sum of all the digits of N, and output every digit of the sum in English.
-输入格式：
-Each input file contains one test case. Each case occupies one line which contains an N (≤10^100^).
-输出格式：
-For each test case, output in one line the digits of the sum in English words. There must be one space between two consecutive words, but no extra space at the end of a line.
-输入样例：
-12345
-
-输出样例：
-one five
-
-答案：
-/* * N最多有100位只能用string存储 * 注意最后的空格 */#include &lt;iostream&gt;#include &lt;string&gt;using namespace std;string alphabet[10] = &#123;"zero","one", "two", "three", "four", "five", "six", "seven", "eight", "nine"&#125;;int main() &#123;    string input;    int sum = 0;    cin &gt;&gt; input;    for (int j = 0; j &lt; input.size(); j++) &#123;        sum += input[j] - '0';    &#125;    string str = to_string(sum);    cout &lt;&lt; alphabet[str[0] - '0'];    for (int i = 1; i &lt; str.size(); ++i) &#123;        cout &lt;&lt; " " &lt;&lt; alphabet[str[i]- '0'];    &#125;&#125;
-
-
-1006 Sign In and Sign Out重点：自定义 sort 函数，string 与 int 的转换
-At the beginning of every day, the first person who signs in the computer room will unlock the door, and the last one who signs out will lock the door. Given the records of signing in’s and out’s, you are supposed to find the ones who have unlocked and locked the door on that day.
-输入格式：
-Each input file contains one test case. Each case contains the records for one day. The case starts with a positive integer M, which is the total number of records, followed by M lines, each in the format:
-ID_number Sign_in_time Sign_out_time
-where times are given in the format HH:MM:SS, and ID_number is a string with no more than 15 characters.
-输出格式：
-For each test case, output in one line the ID numbers of the persons who have unlocked and locked the door on that day. The two ID numbers must be separated by one space.
-Note: It is guaranteed that the records are consistent. That is, the sign in time must be earlier than the sign out time for each person, and there are no two persons sign in or out at the same moment.
-输入样例：
-3CS301111 15:30:28 17:00:10SC3021234 08:00:00 11:25:25CS301133 21:45:00 21:58:40
-
-输出样例：
-SC3021234 CS301133
-
-答案：
-/* * 每个输入，包含进入时间与出门时间 * 取两个string，in和out，记录进门与出门时间，有小于进门或大于出门的就更新 * * 1. 读入第一组数据作为基本值，进门ID与出门ID均为当前ID * 2. 依次读取其他各组数据，若进入时间小于当前 */#include &lt;iostream&gt;#include &lt;string&gt;#include &lt;vector&gt;#include &lt;algorithm&gt;using namespace std;int toSeconds(string time) &#123;    int a, b, c;    a = stoi(time.substr(0,2));    b = stoi(time.substr(3, 2));    c = stoi(time.substr(6, 2));    int result = a * 3600 + b * 60 + c;    return result;&#125;struct Card &#123;    string ID;    int inTime;    int outTime;&#125;;bool earlyCmp(Card card1, Card card2) &#123;    return card1.inTime &lt; card2.inTime;&#125;bool lateCmp(Card card1, Card card2) &#123;    return card1.outTime &gt; card2.outTime;&#125;int main() &#123;    string id, in, out;    vector&lt;Card&gt; list;    int num;    scanf("%d", &amp;num);    while (num--) &#123;        Card card;        cin &gt;&gt; id &gt;&gt; in &gt;&gt; out;        card.ID = id;        card.inTime = toSeconds(in);        card.outTime= toSeconds(out);        list.push_back(card);    &#125;    sort(list.begin(), list.end(), earlyCmp);    cout &lt;&lt; list[0].ID &lt;&lt; " ";    sort(list.begin(), list.end(), lateCmp);    cout &lt;&lt; list[0].ID;&#125;
-
-
-1007 Maximum Subsequence Sum重点：
-Given a sequence of K integers { N1, N2, …, NK }. A continuous subsequence is defined to be { Ni, Ni+1, …, Nj } where 1≤i≤j≤K. The Maximum Subsequence is the continuous subsequence which has the largest sum of its elements. For example, given sequence { -2, 11, -4, 13, -5, -2 }, its maximum subsequence is { 11, -4, 13 } with the largest sum being 20.
-Now you are supposed to find the largest sum, together with the first and the last numbers of the maximum subsequence.
-输入格式：
-Each input file contains one test case. Each case occupies two lines. The first line contains a positive integer K (≤10000). The second line contains K numbers, separated by a space.
-输出格式：
-For each test case, output in one line the largest sum, together with the first and the last numbers of the maximum subsequence. The numbers must be separated by one space, but there must be no extra space at the end of a line. In case that the maximum subsequence is not unique, output the one with the smallest indices i and j (as shown by the sample case). If all the K numbers are negative, then its maximum sum is defined to be 0, and you are supposed to output the first and the last numbers of the whole sequence.
-输入样例：
-10-10 1 2 3 4 -5 -23 3 7 -21
-
-输出样例：
-10 1 4
-
-答案：
-/* * 求最小子序列 * 1. 每次都将整个数列对半分开，记录一个中点下标mid * 2. 计算两边的和 *      1. 如果左边的和大于0，记录left *      2. 如果右边的和大于0，记录right *      3. 如果左边的和小于0，再取对半，直到无法对半分 *      4. 同上 */#include &lt;iostream&gt;#include &lt;vector&gt;using namespace std;int left(vector&lt;int&gt; list) &#123;&#125;int main() &#123;    int num, temp;    vector&lt;int&gt; list;    scanf("%d", &amp;num);    while (num--) &#123;        scanf("%d", &amp;temp);        list.push_back(temp);    &#125;&#125;
-
-/* * 对于有重叠子问题，且问题无后效性的问题，可以考虑用动态规划 * 对于这个问题，我们设A[i]为此序列的值，dp[i]为以i为结尾的最大连续子序列和，那么问题转化为求dp[i]的最大值 * 对于任一dp[i]，有以下两种情况： *  1. 此序列只有一个元素，即dp[i] = A[i] *  2. 此序列有多个元素，那么dp[i]为 dp[i-1] + A[i] 和 A[i]的较大值 *  3. 得出状态转移方程 *          dp[i] = max&#123;A[i], dp[i-1] + A[i]&#125; *  4. 得出一般步骤 *      1. 输入数据 *      2. 显然，dp[0] = A[0] *      3. 随后的逐个枚举，找出最大值即可 * *      举例： *      A：  15 -19 3 4  3  2 -4 -2  5  7 *      dp： 15 -4  3 7 10 12  8  6 11 18 *      A:  15 -5 1 2 3 *      dp：15 * 可以看出，如果A[i]&lt;0，但A[i-1]+A[i]&gt;0，则仍可以计入总子序列 */#include &lt;iostream&gt;#include &lt;algorithm&gt;#include &lt;vector&gt;const int N = 10010;int dp[N], A[N];using namespace std;int main() &#123;    const int N = 10010;    int dp[N], A[N];    int num;    scanf("%d", &amp;num);    for (int i = 0; i &lt; num; ++i) &#123;        scanf("%d", &amp;A[i]);    &#125;    //边界    dp[0] = A[0];    //状态转移方程    int r = 0;  //标记最大值    for (int j = 1; j &lt; num; ++j) &#123;        dp[j] = max(A[j], dp[j-1] + A[j]);        if (dp[j] &gt; dp[r])            r = j;    &#125;    int l = r;    int sum = 0;    for (int k = r; k &gt;= 0; --k) &#123;        sum += A[k];        if (sum == dp[r]) &#123;            l = k;            break;        &#125;    &#125;    //如果A[i]全为负数，则dp[r] &lt; 0, 这时应特别输出    if (dp[r] &lt; 0) &#123;        printf("0 %d %d", A[0], A[num-1]);    &#125; else &#123;        printf("%d %d %d", dp[r], A[l], A[r]);	//注意审题，看到底要求输出的是下标还是数字本身    &#125;&#125;
-
-
-1009 Product of Polynomials重点：数组边界
-This time, you are supposed to find A×B where A and B are two polynomials.
-输入格式：
-Each input file contains one test case. Each case occupies 2 lines, and each line contains the information of a polynomial:
-K N1 aN1 N2 aN2 … NK aNK
-where K is the number of nonzero terms in the polynomial, Ni and aNi (i = 1,2,⋯,K) are the exponents and coefficients, respectively. It is given that 1≤K≤10, 0≤NK&lt;⋯&lt;N2&lt;N1≤1000.
-输出格式：
-For each test case you should output the product of A and B in one line, with the same format as the input. Notice that there must be NO extra space at the end of each line. Please be accurate up to 1 decimal place.
-输入样例：
-2 1 2.4 0 3.22 2 1.5 1 0.5
-
-输出样例：
-3 3 3.6 2 6.0 1 1.6
-
-答案：
-/* * 两个多项式的乘积 * * 读入两组数据， 以hash的形式存入2个数组中 * 依次取出list2的数据，与list1的每一项相乘，结果存入另一个数组 * list[exp] = coe，与每一项相乘时，exp相加，coe相乘 * 排序，输出 * */#include &lt;iostream&gt;#include &lt;vector&gt;//两个1000位数相乘，指数最大可以达到2000const int N = 2010;using namespace std;int main() &#123;    double list1[N] = &#123;0.0&#125;, list2[N] = &#123;0.0&#125;, result[N] = &#123;0.0&#125;;    int num,exp;    double coe;    scanf("%d", &amp;num);    while (num--) &#123;        scanf("%d %lf", &amp;exp, &amp;coe);        list1[exp] = coe;    &#125;    scanf("%d", &amp;num);    while (num--) &#123;        scanf("%d %lf", &amp;exp, &amp;coe);        list2[exp] = coe;    &#125;    //开始相乘    int tempExp;    double tempCoe;    for (int i = 0; i &lt; N; ++i) &#123;        if (list1[i] != 0.0) &#123;            for (int j = 0; j &lt; N; ++j) &#123;                //list[exp] = coe，与每一项相乘时，exp相加，coe相乘                if (list2[j] != 0.0) &#123;                    tempExp = i + j;                    tempCoe = list1[i] * list2[j];                    result[tempExp] += tempCoe;                &#125;            &#125;        &#125;    &#125;    int count = 0;    for (int k = 0; k &lt; N; ++k) &#123;        if (result[k] != 0.0)            count++;    &#125;    printf("%d", count);    for (int l = N - 1; l &gt;= 0 ; --l) &#123; //注意，函数边界是N，但下标取不到        if (result[l] != 0.0) &#123;            printf(" %d %.1f", l,result[l]);        &#125;    &#125;&#125;
-
-
-1010 Radix重点：
-Given a pair of positive integers, for example, 6 and 110, can this equation 6 = 110 be true? The answer is yes, if 6 is a decimal number and 110 is a binary number.
-Now for any pair of positive integers N1 and N2, your task is to find the radix（进制） of one number while that of the other is given.
-输入格式：
-Each input file contains one test case. Each case occupies a line which contains 4 positive integers:
-N1 N2 tag radix
-Here N1 and N2 each has no more than 10 digits. A digit is less than its radix and is chosen from the set { 0-9, a-z } where 0-9 represent the decimal numbers 0-9, and a-z represent the decimal numbers 10-35. The last number radix is the radix of N1 if tag is 1, or of N2 if tag is 2.
-输出格式：
-For each test case, print in one line the radix of the other number so that the equation N1 = N2 is true. If the equation is impossible, print Impossible. If the solution is not unique, output the smallest possible radix.
-输入样例1：
-6 110 1 10
-
-输出样例2：
-2
-
-输入样例2：
-1 ab 1 2
-
-输出样例2：
-Impossible
-
-答案：
-/* * 进制转换 * 思路：进制数小于位数，将两个数转换为10进制进行比较 */#include &lt;iostream&gt;#include &lt;string&gt;#include &lt;cmath&gt;using namespace std;int trans(string input, int demical) &#123;    int result = -1;    int radix, exp, sum;    for ( radix = 2; radix &lt; 36; ++radix) &#123;        exp = 0;        sum = 0;        for (int i = input.size() - 1; i &gt;= 0; --i) &#123;            if (input[i] &lt;= 'z' &amp;&amp; input[i] &gt;= 'a')                sum += (input[i] - 'a' + 10) * pow(radix, exp);            else                sum += (input[i] - '0') * pow(radix, exp);            exp++;        &#125;        if (sum == demical) &#123;            result = radix;            break;        &#125;    &#125;    return result;&#125;int main() &#123;    string N[3];    int tag, radix;    cin &gt;&gt; N[1] &gt;&gt; N[2] &gt;&gt; tag &gt;&gt; radix;    int demical = 0;    int exp = 0;    for (int i = N[tag].size() - 1; i &gt;= 0; --i) &#123;        if (N[tag][i] &lt;= 'z' &amp;&amp; N[tag][i] &gt;='a')            demical += (N[tag][i] - 'a' + 10) * pow(radix, exp);        else            demical += (N[tag][i] - '0') * pow(radix, exp);        exp++;    &#125;    int result;    if (tag == 1)        result = trans(N[2], demical);    else        result = trans(N[1], demical);    if (result != -1)        printf("%d", result);    else        printf("Impossible");&#125;
-
-
-1011 World Cup Betting重点：数组传入函数
-With the 2010 FIFA World Cup running, football fans the world over were becoming increasingly excited as the best players from the best teams doing battles for the World Cup trophy in South Africa. Similarly, football betting fans were putting their money where their mouths were, by laying all manner of World Cup bets.
-Chinese Football Lottery provided a “Triple Winning” game. The rule of winning was simple: first select any three of the games. Then for each selected game, bet on one of the three possible results – namely W for win, T for tie, and L for lose. There was an odd assigned to each result. The winner’s odd would be the product of the three odds times 65%.
-For example, 3 games’ odds are given as the following:
- W    T    L1.1  2.5  1.71.2  3.1  1.64.1  1.2  1.1
-
-To obtain the maximum profit, one must buy W for the 3rd game, T for the 2nd game, and T for the 1st game. If each bet takes 2 yuans, then the maximum profit would be (4.1×3.1×2.5×65%−1)×2=39.31 yuans (accurate up to 2 decimal places).
-输入格式：
-Each input file contains one test case. Each case contains the betting information of 3 games. Each game occupies a line with three distinct odds corresponding to W, T and L.
-输出格式：
-For each test case, print in one line the best bet of each game, and the maximum profit accurate up to 2 decimal places. The characters and the number must be separated by one space.
-输入样例：
-1.1 2.5 1.71.2 3.1 1.64.1 1.2 1.1
-
-输出样例：
-T T W 39.31
-
-答案：
-/* * 寻找最大赔率方案 * 思路： *  1. 将3组数据分别存到3个数组内 *  2. 找出每一组的最大值 *  3. 输出 */#include &lt;iostream&gt;using namespace std;int find_max(double a[3]) &#123;    if (a[0] &gt; a[1] ) &#123;        if (a[0] &gt; a[2])            return 0;        else            return 2;    &#125; else &#123;        if (a[1] &gt; a[2])            return 1;        else            return 2;    &#125;&#125;int main() &#123;    double a[3], b[3], c[3];    char list[3] = &#123;'W', 'T', 'L'&#125;;//    memset(a, 0.0, sizeof(a));//    memset(b, 0.0, sizeof(a));//    memset(c, 0.0, sizeof(a));    scanf("%lf %lf %lf", &amp;a[0], &amp;a[1], &amp;a[2]);    scanf("%lf %lf %lf", &amp;b[0], &amp;b[1], &amp;b[2]);    scanf("%lf %lf %lf", &amp;c[0], &amp;c[1], &amp;c[2]);    int mark1 = find_max(a);    int mark2 = find_max(b);    int mark3 = find_max(c);    double result = (a[mark1] * b[mark2] * c[mark3] * 0.65 - 1) * 2;    printf("%c %c %c %.2f", list[mark1], list[mark2], list[mark3], result);&#125;
-
-
-1012 The Best Rank重点：
-To evaluate the performance of our first year CS majored students, we consider their grades of three courses only: C - C Programming Language, M - Mathematics (Calculus or Linear Algrbra), and E - English. At the mean time, we encourage students by emphasizing on their best ranks – that is, among the four ranks with respect to the three courses and the average grade, we print the best rank for each student.
-For example, The grades of C, M, E and A - Average of 4 students are given as the following:
-StudentID  C  M  E  A310101     98 85 88 90310102     70 95 88 84310103     82 87 94 88310104     91 91 91 91
-
-Then the best ranks for all the students are No.1 since the 1st one has done the best in C Programming Language, while the 2nd one in Mathematics, the 3rd one in English, and the last one in average.
-输入格式：
-Each input file contains one test case. Each case starts with a line containing 2 numbers N and M (≤2000), which are the total number of students, and the number of students who would check their ranks, respectively. Then N lines follow, each contains a student ID which is a string of 6 digits, followed by the three integer grades (in the range of [0, 100]) of that student in the order of C, M and E. Then there are M lines, each containing a student ID.
-输出格式：
-For each of the M students, print in one line the best rank for him/her, and the symbol of the corresponding rank, separated by a space.
-The priorities of the ranking methods are ordered as A &gt; C &gt; M &gt; E. Hence if there are two or more ways for a student to obtain the same best rank, output the one with the highest priority.
-If a student is not on the grading list, simply output N/A.
-输入样例：
-5 6310101 98 85 88310102 70 95 88310103 82 87 94310104 91 91 91310105 85 90 903101013101023101033101043101059999995 6 310101 98 85 88 310102 70 95 88 310103 82 87 94 310104 91 91 91 310105 85 90 90 310101 310102 310103 310104 310105 999999
-
-输出样例：
-1 C1 M1 E1 A3 AN/A
-
-答案：
-/* * 1. 构造结构体，每一门有相应的分数和名词 * 2. 读入 * 3. 将A C M E 的排名按顺序存入一个数组中，从左到右寻找最大值 * 题目没说相同分数名词相同，坑死我了 */#include &lt;iostream&gt;#include &lt;vector&gt;#include &lt;string&gt;#include &lt;algorithm&gt;#include &lt;cmath&gt;using namespace std;struct Student &#123;    int ID, A, C, M, E;    int rank[4];&#125;;bool cmpC(Student A, Student B) &#123;    return A.C &gt; B.C;&#125;bool cmpM(Student A, Student B) &#123;    return A.M &gt; B.M;&#125;bool cmpE(Student A, Student B) &#123;    return A.E &gt; B.E;&#125;bool cmpA(Student A, Student B) &#123;    return A.A &gt; B.A;&#125;bool cmp(Student A, Student B) &#123;&#125;void find_max(Student A) &#123;    char out[4] = &#123;'A', 'C', 'M', 'E'&#125;;    int maxRank = 0;    for (int i = 1; i &lt; 4; ++i) &#123;        if (A.rank[i] &lt; A.rank[maxRank]) &#123;            maxRank = i;        &#125;    &#125;    printf("%d %c\n", A.rank[maxRank], out[maxRank]);&#125;int if_exist(int ID, vector&lt;Student&gt; list) &#123;    int result = -1;    for (int i = 0; i &lt; list.size(); ++i) &#123;        if (list[i].ID == ID) &#123;            result = i;            break;        &#125;    &#125;    return result;&#125;int main() &#123;    int N, M;    vector&lt;Student&gt; list;    scanf("%d %d", &amp;N, &amp;M);    while (N--) &#123;        Student temp;        double tempA;        scanf("%d %d %d %d", &amp;temp.ID, &amp;temp.C, &amp;temp.M, &amp;temp.E);        tempA = round((temp.C + temp.M + temp.E) / 3);        temp.A = tempA;        list.push_back(temp);    &#125;    sort(list.begin(), list.end(), cmpC);    list[0].rank[1] = 1;    int rank = 1;    for (int i = 1; i &lt; list.size(); i++) &#123;        if (list[i].C == list[i-1].C) &#123;            list[i].rank[1] = rank++;        &#125; else &#123;            list[i].rank[1] = ++rank;        &#125;    &#125;    sort(list.begin(), list.end(), cmpM);    list[0].rank[2] = 1;    rank = 1;    for (int i = 1; i &lt; list.size(); i++) &#123;        if (list[i].M == list[i-1].M) &#123;            list[i].rank[2] = rank++;        &#125; else &#123;            list[i].rank[2] = ++rank;        &#125;    &#125;    sort(list.begin(), list.end(), cmpE);    list[0].rank[3] = 1;    rank = 1;    for (int i = 1; i &lt; list.size(); i++) &#123;        if (list[i].E == list[i-1].E) &#123;            list[i].rank[3] = rank++;        &#125; else &#123;            list[i].rank[3] = ++rank;        &#125;    &#125;    sort(list.begin(), list.end(), cmpA);    list[0].rank[0] = 1;    rank = 1;    for (int i = 1; i &lt; list.size(); i++) &#123;        if (list[i].E == list[i-1].E) &#123;            list[i].rank[0] = rank++;        &#125; else &#123;            list[i].rank[0] = ++rank;        &#125;    &#125;        int tempID;    while (M--) &#123;        scanf("%d", &amp;tempID);        int exist = if_exist(tempID, list);        if (exist != -1) &#123;            find_max(list[exist]);        &#125; else &#123;            printf("N/A\n");        &#125;    &#125;&#125;
-
-
-1013 Battle Over Cities重点：
-It is vitally important to have all the cities connected by highways in a war. If a city is occupied by the enemy, all the highways from/toward that city are closed. We must know immediately if we need to repair any other highways to keep the rest of the cities connected. Given the map of cities which have all the remaining highways marked, you are supposed to tell the number of highways need to be repaired, quickly.
-For example, if we have 3 cities and 2 highways connecting city1-city2 and city1-city3. Then if city1 is occupied by the enemy, we must have 1 highway repaired, that is the highway city2-city3.
-输入格式：
-Each input file contains one test case. Each case starts with a line containing 3 numbers N (&lt;1000), M and K, which are the total number of cities, the number of remaining highways, and the number of cities to be checked, respectively. Then M lines follow, each describes a highway by 2 integers, which are the numbers of the cities the highway connects. The cities are numbered from 1 to N. Finally there is a line containing K numbers, which represent the cities we concern.
-输出格式：
-For each of the K cities, output in a line the number of highways need to be repaired if that city is lost.
-输入样例：
-3 2 31 21 31 2 3
-
-输出样例：
-100
-
-答案：
-
-
-
-1014 Waiting in Line重点：
-Suppose a bank has N windows open for service. There is a yellow line in front of the windows which devides the waiting area into two parts. The rules for the customers to wait in line are:
-
-The space inside the yellow line in front of each window is enough to contain a line with M  customers. Hence when all the N  lines are full, all the customers after (and including) the (NM+1)st one will have to wait in a line behind the yellow line.
-Each customer will choose the shortest line to wait in when crossing the yellow line. If there are two or more lines with the same length, the customer will always choose the window with the smallest number.
-Customer i  will take Ti  minutes to have his/her transaction processed.
-The first N customers are assumed to be served at 8:00am.
-
-Now given the processing time of each customer, you are supposed to tell the exact time at which a customer has his/her business done.
-For example, suppose that a bank has 2 windows and each window may have 2 custmers waiting inside the yellow line. There are 5 customers waiting with transactions taking 1, 2, 6, 4 and 3 minutes, respectively. At 08:00 in the morning, customer1 is served at window1 while customer2 is served at window2. Customer3 will wait in front of window1 and customer4 will wait in front of window2. Customer5 will wait behind the yellow line.
-At 08:01, customer1 is done and customer5 enters the line in front of window1 since that line seems shorter now. Customer2 will leave at 08:02, customer4 at 08:06, customer3 at 08:07, and finally customer5 at 08:10.
-输入格式：
-Each input file contains one test case. Each case starts with a line containing 4 positive integers: N (≤20, number of windows), M (≤10, the maximum capacity of each line inside the yellow line), K (≤1000, number of customers), and Q (≤1000, number of customer queries).
-The next line contains K positive integers, which are the processing time of the K customers.
-The last line contains Q positive integers, which represent the customers who are asking about the time they can have their transactions done. The customers are numbered from 1 to K.
-输出格式：
-For each of the Q customers, print in one line the time at which his/her transaction is finished, in the format HH:MM where HH is in [08, 17] and MM is in [00, 59]. Note that since the bank is closed everyday after 17:00, for those customers who cannot be served before 17:00, you must output Sorry instead.
-输入样例：
-2 2 7 51 2 6 4 3 534 23 4 5 6 7
-
-输出样例：
-08:0708:0608:1017:00Sorry
-
-答案：
-/* * queue的应用 * N个窗口，每个队列容纳M个人，K位顾客，Q个计算 * 不需要构建顾客结构体，构建窗口的结构体，包含等待队列，等待人数，结束时间，队首出队时间 * * 如何创建不定个窗口？创建窗口结构体数组，存入vector中 * 对于17：00后还没有出队的顾客，输出Sorry * 将时间按分钟记录，最后转为小时计数 * 1. 输入数据，存入vector&lt;Window&gt; list中 * 2. cost存入另一个quene&lt;int&gt; queue，逐个取出 * 3. 开始模拟，对于前NM个，直接依次进队列；从NM+1开始，每次从costList中取出一个，取待定人数最少，序号最小的队列存入，并更新相应Window的over_time * 4. 如果模拟过程中，某个队列满了，则执行出队操作， * 5. 将所有的出队时间存入一个vector中， */#include &lt;iostream&gt;#include &lt;queue&gt;using namespace std;struct Window &#123;    int in_line_people = 0;    int over_time = 0;    queue&lt;int&gt; line;&#125;;//找到队列中的应该进入的队列int find_queue(vector&lt;Window&gt; list) &#123;    int result = 0;    for (int i = 1; i &lt; list.size(); ++i) &#123;        if (list[i].in_line_people &lt; list[result].in_line_people)            result = i;    &#125;    return result;&#125;int main() &#123;    int N, M, K, Q;    int time = 0; //全局变量，表示当前时间    scanf("%d %d %d %d", &amp;N, &amp;M, &amp;K, &amp;Q);    vector&lt;Window&gt; list;    queue&lt;int&gt; costList;    vector&lt;int&gt; query;    //初始化各个窗口    while(N--) &#123;        Window tempWindow;        tempWindow.in_line_people = M;        list.push_back(tempWindow);    &#125;    int tempQuery = 0;    while (Q--) &#123;        scanf("%d", &amp;tempQuery);        query.push_back(tempQuery);    &#125;    //读入各个cost    int tempCost = 0;    while (K--) &#123;        scanf("%d", &amp;tempCost);        costList.push(tempCost);    &#125;    //开始模拟    //对于前NM个    int temp = min(N*M, K);    while (temp--) &#123;        for (int i = 0; i &lt; ; ++i) &#123;                    &#125;    &#125;&#125;
-
-
-1015 Reversible Primes重点：
-A reversible prime in any number system is a prime whose “reverse” in that number system is also a prime. For example in the decimal system 73 is a reversible prime because its reverse 37 is also a prime.
-Now given any two positive integers N (&lt;105) and D (1&lt;D≤10), you are supposed to tell if N is a reversible prime with radix D.
-输入格式：
-The input file consists of several test cases. Each case occupies a line which contains two integers N and D. The input is finished by a negative N.
-输出格式：
-For each test case, print in one line Yes if N is a reversible prime with radix D, or No if not.
-输入样例：
-73 1023 223 10-2
-
-输出样例：
-YesYesNo
-
-答案：
-1. /* * 1. 判断原数是否为素数，结果存入一个vector * 2. 将原数转换为D进制数，再反转，再转为十进制数 * 3. 再判断其是否为素数，结果存入另一个vector * 4. 同一位置都为true，输出Yes，否则输出No */#include &lt;stdio.h&gt;#include &lt;vector&gt;#include &lt;cmath&gt;#include &lt;iostream&gt;using namespace std;bool isPrime(int a) &#123;    if (a == 1) 	//必须有，题目中N可能取到1        return false;    int upper = int(sqrt(a * 1.0));  //重要，使用自动类型转换，不使用不一定出问题，但建议加上    for (int i = 2; i &lt;= upper; ++i) &#123;  //必须可以取到平方根        if (a % i == 0) &#123;            return false;        &#125;    &#125;    return true;&#125;int reverse(int number, int radix) &#123;    vector&lt;int&gt; list;    int result = 0;    while (number) &#123;        list.push_back(number % radix);        number /= radix;    &#125;    for (int i = 0; i &lt; list.size(); i++) &#123;        result = result * radix + list[i];    &#125;    return result;&#125;int main() &#123;    int number, radix, re;    while (scanf("%d", &amp;number) != EOF) &#123;        if (number &lt; 0)            break;        scanf("%d", &amp;radix);	//必须两个都读完再判断        if (isPrime(number) == false) &#123;            printf("No\n");            continue;        &#125;        re = reverse(number, radix);        printf("%s", isPrime(re) ? "Yes\n" : "No\n");    &#125;&#125;2./* * 1. 判断原数是否为素数，结果存入一个vector * 2. 将原数转换为D进制数，再反转，再转为十进制数 * 3. 再判断其是否为素数，结果存入另一个vector * 4. 同一位置都为true，输出Yes，否则输出No */#include &lt;stdio.h&gt;#include &lt;vector&gt;#include &lt;cmath&gt;#include &lt;iostream&gt;using namespace std;bool isPrime(int a) &#123;    if (a == 1)        return  false;    int upper = int(sqrt(a * 1.0));    for (int i = 2; i &lt;= upper; ++i) &#123;  //重要，使用自动类型转换，不使用不一定出问题，但建议加上        if (a % i == 0) &#123;            return false;        &#125;    &#125;    return true;&#125;int reverse(int number, int radix) &#123;    int arr[100];    int i = 0, result = 0;    while (number) &#123;        arr[i++] = number % radix;        number /= radix;    &#125;    for (int j = 0; j &lt; i; j++) &#123;        result = result * radix + arr[j];    &#125;    return result;&#125;int main() &#123;    int number, radix;    while (cin &gt;&gt; number) &#123;        if (number &lt; 0)            break;        cin &gt;&gt; radix;        if (isPrime(number) &amp;&amp; isPrime(reverse(number, radix))) &#123;            cout &lt;&lt; "Yes" &lt;&lt; endl;        &#125; else &#123;            cout &lt;&lt; "No" &lt;&lt; endl;        &#125;    &#125;&#125;
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-12&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/PAT%20%E7%94%B2%E7%BA%A7">PAT 甲级</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/PAT">PAT</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
     
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/11/11/hello-world/">
-        <p class="h4 index-header">Hello World</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new "My New Post"
+    <div class="post-body" itemprop="articleBody">
 
-More info: Writing
-Run server$ hexo server
-
-More info: Server
-Generate static files$ hexo generate
-
-More info: Generating
-Deploy to remote sites$ hexo deploy
-
-More info: Deployment
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-11&nbsp;&nbsp;
-        
-        
-        
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-  </main>
-
-  
-    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
-      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
-    </a>
-  
-
-  
-    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-  
-
-  <footer class="mt-5">
-  <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
-    <br>
-
-    
-
-
-    
-
-  </div>
-</footer>
-
-<!-- SCRIPTS -->
-<script src="/lib/jquery/jquery.min.js" ></script>
-<script src="/lib/popper/popper.min.js" ></script>
-<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
-<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
-<script src="/js/main.js" ></script>
-
-
-  <script src="/js/lazyload.js" ></script>
-
-
-
-
-
-  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
-
-
-
-
-<!-- Plugins -->
-
-
-
-  <script src="/lib/prettify/prettify.min.js" ></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').addClass('prettyprint  ');
-      prettyPrint();
-    })
-  </script>
-
-
-
-  <script src="/lib/typed/typed.min.js" ></script>
-  <script>
-    var typed = new Typed('#subtitle', {
-      strings: [
-        '  ',
-        "Are you still in pain?&nbsp;",
-      ],
-      cursorChar: "_",
-      typeSpeed: 70,
-      loop: false,
-    });
-    typed.stop();
-    $(document).ready(function () {
-      $(".typed-cursor").addClass("h2");
-      typed.start();
-    });
-  </script>
-
-
-
-  <script src="/lib/anchor/anchor.min.js" ></script>
-  <script>
-    anchors.options = {
-      placement: "right",
-      visible: "false",
       
-    };
-    var el = "h1,h2,h3,h4,h5,h6".split(",");
-    var res = [];
-    for (item of el) {
-      res.push(".markdown-body > " + item)
-    }
-    anchors.add(res.join(", "))
-  </script>
+          <p>PAT 甲级 1001 〜 1015</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/12/1001%20%E3%80%9C%201015/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/12/%E6%A0%87%E6%97%A5%E5%88%9D%E7%BA%A7%E4%B8%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Himitsu98">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="No one's sky">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/12/%E6%A0%87%E6%97%A5%E5%88%9D%E7%BA%A7%E4%B8%8A/" class="post-title-link" itemprop="url">标日初级上</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-12 10:00:00" itemprop="dateCreated datePublished" datetime="2019-11-12T10:00:00+08:00">2019-11-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-14 19:44:55" itemprop="dateModified" datetime="2019-11-14T19:44:55+08:00">2019-11-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%97%A5%E8%AF%AD%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">日语学习</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>中日交流标准日本语初级上册</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/12/%E6%A0%87%E6%97%A5%E5%88%9D%E7%BA%A7%E4%B8%8A/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Himitsu98">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="No one's sky">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/11/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-11 22:19:05" itemprop="dateCreated datePublished" datetime="2019-11-11T22:19:05+08:00">2019-11-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+  </div>
+
+  
 
 
 
-  <script src="/js/local-search.js" ></script>
-  <script>
-    var path = "/local-search.xml";
-    var inputArea = document.querySelector("#local-search-input");
-    inputArea.onclick = function () {
-      getSearchFile(path);
-      this.onclick = null
-    }
-  </script>
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Himitsu98</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
 
 
 
-  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
-  <script>
-    $("#post img:not(.no-zoom img, img[no-zoom])").each(
-      function () {
-        var element = document.createElement("a");
-        $(element).attr("data-fancybox", "images");
-        $(element).attr("href", $(this).attr("src"));
-        $(this).wrap(element);
-      }
-    );
-  </script>
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Himitsu98</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
   
 
   
-    <!-- MathJax -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-          tex2jax: {
-              inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-              processEscapes: true,
-              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-          }
-      });
-
-      MathJax.Hub.Queue(function() {
-          var all = MathJax.Hub.getAllJax(), i;
-          for(i=0; i < all.length; i += 1) {
-              all[i].SourceElement().parentNode.className += ' has-jax';
-          }
-      });
-
-    </script>
-
-    <script src="https://cdn.staticfile.org/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML" ></script>
-
-  
-
-
-
-
 
 </body>
 </html>
